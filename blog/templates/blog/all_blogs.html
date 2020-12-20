@@ -1,0 +1,17 @@
+{% extends "portfolio/base.html" %} {% load static %} {% block content %}
+
+<h1 id="blogtitle" class="font-weight-bold text-center">"My Space"</h1>
+
+<h3 class="text-center mb-5">Views expressed here are mine!</h3>
+
+{% for blog in blogs %}
+<div class="row justify-content-center my-3">
+  <div class="col-md-10">
+    <a href="{% url 'blog:details' blog.id %}">
+      <h4>{{ blog.title }}</h4>
+    </a>
+    <h6 class="text-muted">{{ blog.date|date:'M d Y'|upper }}</h6>
+    <h5>{{ blog.preview|striptags|truncatechars:100 }}</h5>
+  </div>
+</div>
+{% endfor %} {% endblock %}

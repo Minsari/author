@@ -1,0 +1,45 @@
+{% extends "portfolio/base.html" %} {% load static %} {% block content %}
+
+<div class="row justify-content-center my-3">
+  <div class="col-5">
+    <img
+      class="img-fluid mb-5 d-block mx-auto"
+      id="kom"
+      src="{% static 'portfolio/img/kinyanjui.png' %}"
+      class="img-fluid"
+    />
+  </div>
+</div>
+
+<div class="masthead text-white text-center">
+  <div class="container">
+    <h2 id="hometext" class="font-weight-bold">Kinyanjui Kombani</h2>
+    <h2 id="unique" class="font-weight-light mb-0">
+      "The Banker who Writes" | Learning Solutions Specialist | Creative-Fiction
+      Writer
+    </h2>
+  </div>
+</div>
+
+<div class="container">
+  <h3 class="mt-5" id="books">Books Written</h3>
+  <hr />
+  <div class="row">
+    {% for project in projects %}
+    <div class="col-lg-4 col-md-6">
+      {% if project.url %}
+      <a href="{{ project.url }}">
+        <img src="{{ project.image.url }}" class="img-fluid mb-2" />
+      </a>
+      {% else %}
+
+      <img src="{{ project.image.url }}" class="img-fluid mb-2" />
+      {% endif %}
+      <h4>{{ project.title }}</h4>
+      <p>{{ project.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}
