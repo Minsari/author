@@ -22,7 +22,7 @@ SECRET_KEY = 'u3j6g!7ji*68q#@1!=3)=t+4-v@@t@737vn@v_0h+x6gi#q033'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kombani.pythonanywhere.com', 'http://127.0.0.1/']
 
 
 # Application definition
