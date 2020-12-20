@@ -15,6 +15,11 @@ body {
   margin-top: 40px;
 }
 
+#webster {
+  color: pink;
+  font-weight: bolder;
+}
+
 .home-brand {
   font-size: 1.5rem;
   text-transform: uppercase;
