@@ -6,7 +6,7 @@
 
 {% for blog in blogs %}
 <div class="row justify-content-center my-3">
-  <div class="col-md-10">
+  <div id="blog" class="col-md-10">
     <a href="{% url 'blog:details' blog.id %}">
       <h4>{{ blog.title }}</h4>
     </a>

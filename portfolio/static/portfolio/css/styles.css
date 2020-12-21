@@ -66,6 +66,22 @@ hr.star-dark:after {
   font-weight: bold;
 }
 
+#blog {
+  background-color: #fff;
+  border-radius: 25px;
+  border: 2px solid rgb(203, 212, 160);
+  padding: 20px;
+  color: #000;
+}
+
+#blog-details {
+  background-color: rgb(203, 212, 160);
+  border-radius: 15px;
+  border: 2px solid #fff;
+  padding: 20px;
+  color: #000;
+}
+
 hr.star-dark:after,
 hr.star-light:after {
   position: relative;

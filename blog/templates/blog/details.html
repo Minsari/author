@@ -4,6 +4,7 @@
 
 <h5 class="text-center text-muted mb-5">{{ blog.date|date:'F jS Y' }}</h5>
 
-<div class="container">{{ blog.preview|safe }}</div>
+<div id="blog-details" class="container">{{ blog.preview|safe }}</div>
+<br />
 
 {% endblock %}
