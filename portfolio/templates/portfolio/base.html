@@ -27,7 +27,13 @@
 
     <!---Link icon-->
     <link rel="icon" href="{% static 'portfolio/img/kk.png' %}" />
-    <title>Kinyanjui Kombani</title>
+    <title>
+    
+    {% block title %} 
+    
+    {% endblock %}
+
+    </title>
   </head>
 
   <body>
@@ -112,7 +118,9 @@
 
     <! comment: navbar ends here >
 
-    {% block content %} {% endblock %}
+    {% block content %} 
+    
+    {% endblock %}
     <! comment: custom code to expand >
 
     <!-- Optional JavaScript -->
