@@ -1,2 +1,2 @@
 # author
-Author blog written in python django.
+Author blog written in python django
